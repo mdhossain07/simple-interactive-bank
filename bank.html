@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        .open-sans{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="open-sans">
+    <header>
+        <h1 class="text-5xl text-semibold text-center mt-10"> Let's Make <span class="text-purple-600 text-bold"> Scam 2023!!! </span> </h1>
+    </header>
+
+    <main class="container mx-auto px-8 md:px-16 lg:px-24">
+        <!-- Deposit, Withdraw, Balance Display Section -->
+        <section class="mt-16 flex gap-10 flex-col md:flex-row after:lg:flex-row">
+            <!-- Deposit Card -->
+            <div class="bg-blue-400 text-white p-10 rounded-lg mx-auto w-9/12 lg:w-1/3">
+                <!-- Deposit Card-->
+                <h2 class="text-2xl"> Deposit </h2> 
+                <p class="text-5xl">$<span id="deposit-show">00</span></p>
+            </div>
+
+            <!-- Withdraw Card -->
+            <div class="bg-green-400 text-white rounded-lg p-10 mx-auto w-9/12 lg:w-1/3">
+                <!-- Deposit Card-->
+                <h2 class="text-2xl"> Withdraw </h2> 
+                <p class="text-5xl">$<span id="withdraw-show">00</span></p>
+            </div>
+
+            <!-- Total Balance Card -->
+            <div class="bg-yellow-400 text-white rounded-lg p-10 mx-auto w-9/12 lg:w-1/3">
+                <!-- Deposit Card-->
+                <h2 class="text-2xl"> Balance </h2> 
+                <p class="text-5xl">$<span id="balance-show">1240</span></p>
+            </div>
+           
+        </section>
+
+        <!-- Deposit & Withdraw Input Section -->
+        <section class="mt-16 flex gap-10 flex-col lg:flex-row">
+            <!-- Deposit Container -->
+            <div class="bg-red-300 rounded-sm py-6 px-10 w-full lg:w-1/2">
+                <h2 class="text-2xl text-semibold"> Please Deposit </h2>
+                <div class="w-9/11 mt-6">
+                    <input class="block w-9/12 py-1 px-3" type="text" name="" id="deposit-input" placeholder="$ you want to deposit">
+                </div>
+                <button id="deposit-btn" class="bg-rose-500 px-4 py-2 text-white text-xl mt-4 hover:bg-rose-400">Deposit</button>
+            </div>
+
+            <!-- Withdraw Container -->
+            <div class="bg-purple-400 rounded-sm py-6 px-10 w-full lg:w-1/2">
+                <h2 class="text-2xl text-semibold"> Please Withdraw </h2>
+                <div class="w-9/11 mt-6">
+                    <input class="block w-9/12 py-1 px-3" type="text" name="" id="withdraw-input" placeholder="$ you want to withdraw">
+                </div>
+                <button id="withdraw-btn" class="bg-rose-500 px-4 py-2 text-white text-xl mt-4 hover:bg-rose-400">Withdraw</button>
+            </div>
+                
+        </section>
+    </main>
+
+    <script src="./js/bank.js"></script>
+</body>
+</html>

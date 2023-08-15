@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        .open-sans{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="open-sans">
+
+    <header>
+        <h1 class="text-5xl text-semibold text-center mt-10"> Simple Interactive <span class="text-purple-600 tetx-bold"> Personal Bank! </span> </h1>
+    </header>
+
+    <main class="w-4/5 mx-auto mt-20 px-8 md:px-16 lg:px-24">
+        <!-- Login Section -->
+        <section class="bg-cyan-400 p-8">
+            <h2 class="text-white text-4xl"> Please Login </h2>
+        <div class="w-9/11 mt-6">
+            <input class="block w-9/12 py-1 px-3" type="email" name="" id="email-input" placeholder="enter your email">
+            <input class="my-3 w-3/4 px-3 py-1" type="password" name="" id="password-input"placeholder="your password">
+        </div>
+        <button id="login-btn" class="bg-orange-500 px-4 py-2 text-white text-xl mt-4 hover:bg-red-600">Login</button>
+        
+        </section>
+    
+    </main>
+
+    <script src="./js/bank.js"></script>
+</body>
+</html>
